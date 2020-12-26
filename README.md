@@ -1,8 +1,16 @@
 # ShoppingCart
 
-An Ecommerce Web application developed using Angular 10 and Firebase for backend . Authentication is implemented using Google OAuth. 
+An Ecommerce Web application developed using Angular 10 and Firebase for backend . Authentication is implemented using Google OAuth. Application is divided
+into 4 independent modules.
 
-[
+
+
+![alt text](https://github.com/athul-narayanan/E-commerce/blob/master/productslist'.png)
+![alt text](https://github.com/athul-narayanan/E-commerce/blob/master/productadd.png)
+![alt text](https://github.com/athul-narayanan/E-commerce/blob/master/checkoutform.png)
+![alt text](https://github.com/athul-narayanan/E-commerce/blob/master/placeOrder.png)
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
 
