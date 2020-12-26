@@ -1,0 +1,24 @@
+
+<div class="row">
+    <div class="col-md-3">
+        <product-filter [category]="category"></product-filter>
+    </div>
+    <div class="col" *ngIf="cart$|async as cart">
+        <div class="row">
+            <div class="col-md-6" *ngFor="let product of filteredProducts">
+                <product-card *ngIf="cart" [product]="product" [shoppingCart]="cart">
+                  <div class="card-footer">
+                    <button *ngIf="!cart.getQuantity(product);else addCartTemplate" (click)="addToCart(product)" class="btn btn-secondary btn-block">Add to cart</button>
+                  </div>
+                  <ng-template #addCartTemplate>
+                    <product-quantity [product]="product" [shoppingCart]="cart"></product-quantity>
+                   </ng-template>
+                </product-card>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
